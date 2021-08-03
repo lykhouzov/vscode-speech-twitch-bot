@@ -1,7 +1,15 @@
 {
     "name": "vscode-speech-bot",
-    "displayName": "vscode-speech-bot",
-    "description": "Twitch chat bot which can talk. it uses speechSynthesis to generate a voice.",
+    "displayName": "Twitch Chat Bot who speaks",
+    "description": "Twitch chat bot which can talk. It uses speechSynthesis to generate a voice.",
+    "author": {
+        "email": "lykhouzov@gmail.com",
+        "name": "Aleksandr Lykhouzov"
+    },
+    "publisher": "alxly",
+    "repository": {
+        "url": "https://github.com/lykhouzov/vscode-speech-twitch-bot"
+    },
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.58.0"
@@ -15,11 +23,13 @@
     "main": "./extension.js",
     "contributes": {
         "views": {
-            "explorer": [{
-                "type": "webview",
-                "id": "alxly.twitch.bot",
-                "name": "Twitch Chat"
-            }]
+            "explorer": [
+                {
+                    "type": "webview",
+                    "id": "alxly.twitch.bot",
+                    "name": "Twitch Chat"
+                }
+            ]
         },
         "commands": [],
         "configuration": {
